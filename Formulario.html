@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <script src="work2.js">
+    </script>
+    <head>
+        <title>Formulario</title>
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <link rel = "stylesheet" href="css/css.css" type="text/css">
+    </head>
+    <body onload ="cargarDatos();">
+       <div class="container">
+  <div id = "texto"> <h3>Manejo de Usuarios</h3></div>
+<div class="form">
+
+    Nombre:   <input type = "text" id="txtNombre"/>
+    Apellido: <input type = "text" id="txtApellido"/>
+    Telefono: <input type = "text" id="txtTelefono"/>
+    Email:    <input type = "text" id="txtEmail"/>
+    Cedula:   <input type = "text" id="txtCedula"/>
+    Fecha:    <input  type = "date"  id="txtFecha"/><br>
+
+ <button onclick="Agregar();" id="Agregar"type="button">Nuevo</button>
+ <button onclick=" guardarDatos();" id="save_button" type="button">Guardar</button><br><br>
+ <button onclick=" eliminartodo();" id="eliminar" type="button">Borrar todos los datos</button>
+    
+</div>
+<br>
+<div id="tabla">
+    <table id="tabla-1" border="1">
+     <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Cedula</th>
+            <th>Fecha de nacimiento</th>
+            <th id="zodiaco">Signo Zodiaco</th>
+            <th></th>
+        </tr>
+     </thead>
+     <tbody id="Datos">
+    
+    </tbody>
+        </table>
+    </div>
+</div>
+
+    </body>
+</html>
